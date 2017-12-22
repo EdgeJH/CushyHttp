@@ -19,25 +19,28 @@ dependencies {
 }
 ```
 
-Usage
+Information
 --------
 
 English
 
-CushyHttp Library is simple httpclient for restful api.
+```CushyHttp Library is simple httpclient for restful api.
 this support request method get,post.
 You can customize header field.
 Generics is ResponseClass. 
 CushyHttp support Gson Library. So You can get response to custom class.
-
+```
 Korean
 
-쿠시Http 라이브러리는 restful api 를 위해 간단히 사용가능한 http 통신 라이브러리입니다.
+```쿠시Http 라이브러리는 restful api 를 위해 간단히 사용가능한 http 통신 라이브러리입니다.
 기본적으로 get과 post 메소드를 지원하고 
 헤더를 커스텀할 수 있습니다.
 제너릭스 형태는 리스폰을 받고 싶은 형태로 받을 수 있으며
 Gson 매핑을 지원하기 때문에 커스텀 클래스로 받을 수 있습니다.
+```
 
+Usage
+--------
 ```java
 CushyHttp<JSONObject> cushyHttp = new CushyHttp.Builder<>(JSONObject.class)
                 .setRequestMethod(CushyField.GET)
