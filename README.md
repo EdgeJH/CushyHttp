@@ -48,7 +48,8 @@ CushyHttp<JSONObject> cushyHttp = new CushyHttp.Builder<>(JSONObject.class)
                 .setUrl(" http://url")
                 .setRequestHeader("appKey","123123")
                 .build();
-        cushyHttp.startConnection(new OnHttpListener<JSONObject>() {
+                
+ cushyHttp.startConnection(new OnHttpListener<JSONObject>() {
             @Override
             public void onResonpse(JSONObject responseData, int responseCode) {
                 
