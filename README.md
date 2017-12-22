@@ -29,6 +29,7 @@ this support request method get,post.
 You can customize header field.
 Generics is ResponseClass. 
 CushyHttp support Gson Library. So You can get response to custom class.
+You can get cookie string for session
 ```
 Korean
 
@@ -37,6 +38,7 @@ Korean
 헤더를 커스텀할 수 있습니다.
 제너릭스 형태는 리스폰을 받고 싶은 형태로 받을 수 있으며
 Gson 매핑을 지원하기 때문에 커스텀 클래스로 받을 수 있습니다.
+세션관리를 위해 쿠키값을 별도로 가져올 수 있습니다.
 ```
 
 Usage
@@ -59,6 +61,10 @@ CushyHttp<JSONObject> cushyHttp = new CushyHttp.Builder<>(JSONObject.class)
 
             }
         });
+        
+ String cookie = cushyHttp.getCookie();
+ 
+ 
 ```
 
 License
